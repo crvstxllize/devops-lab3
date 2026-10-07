@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                sh 'helm upgrade --install demo microservices/microservices-deploy --namespace demo'
+                sh 'helm upgrade --install demo microservices/msvc-chart --namespace demo'
             }
         }
     }
